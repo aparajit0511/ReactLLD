@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./LLD/Counter";
 import PopOver from "./LLD/PopOver";
 import Popup from "./LLD/Popup";
 import StarRating from "./LLD/StarRating";
@@ -9,6 +10,7 @@ function App() {
       <StarRating />
       <Popup />
       <PopOver />
+      <Counter />
     </div>
   );
 }
