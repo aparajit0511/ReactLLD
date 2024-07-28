@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Frontend Machine Coding Questions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Implement Star Rating functionality
+2. Create a reusable modal component with open and close functionality.
+3. Design a Pop Over component
+4. Create an Accordion UI component
+5. Build a table that supports sorting columns and filtering rows based on user input.
+6. Create an image carousel with next, previous, and auto-play functionality.
+7. Implement a counter with increment and decrement buttons and display the current count.
+8. Create a form with real-time validation for fields like email, password, and confirm password.
+9. Build a grid using HTML/CSS and JavaScript with search, sort, and event bubbling (Amazon onsite)
+10. Design a responsive NavBar
+11. Implement Infinite Scroll feature
+12. Develop Typeahead/Autocomplete functionality using a trie data structure
+13. Implement a shopping cart where users can add items, remove items, and view the total price.
+14. Build a Tic Tac Toe game
+15. Create a Snake and Ladder board game
+16. Make a Calendar of any month like a Date Picker
+17. Create custom Higher Order Functions like Map, Reduce, Filter, and Sort
+18. Design an analog clock
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+19. Implement a file upload component with progress indication.
+20. Create a component that fetches data from an API and displays it in a list.
+21. Build a Todo List application
+22. Implement functionality to change all text on a page to different translations
+23. Develop a Giphy image search and display feature (using the Giphy API) in a responsive format
+24. Create a list where items can be reordered using drag and drop.
+25. Build a Connect Four game
+26. Implement Nested Checkboxes where parent and children checkboxes are synchronized
+27. Create a poll widget
+28. Build an auto-complete search input that suggests results as the user types by querying an API.
+29. Implement a resizable split pane where users can adjust the width of two panels.
+30. Implement a search input that debounces API calls to avoid excessive requests.
+31. Create an image gallery where images are lazy-loaded as they come into the viewport.
+32. Build a tabs component where content changes based on the selected tab.
+33. Implement a simple markdown editor that displays formatted text as you type.
+34. Create a basic chat interface with a message input, send button, and message display area.
+35. Implement a form that is fully accessible, including proper ARIA roles and keyboard navigation.
