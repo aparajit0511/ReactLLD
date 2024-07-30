@@ -57,15 +57,26 @@ function Email() {
     console.log(ValidPass);
     setConfirmPass(ValidPass);
     if (ValidPass.length < Pass.length && ValidPass !== Pass) {
-      setCPError(true);
+      setCPError(false);
     }
 
-    if (ValidPass.length == Pass.length && ValidPass === Pass) {
-      setCPError(false);
+    if (ValidPass.length === Pass.length && ValidPass === Pass) {
+      setCPError(true);
     }
   };
 
   console.log(EError, PassE, CPError);
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+    if (EError && PassE && CPError) {
+      console.log("Email:", Email);
+      console.log("Password:", Pass);
+      console.log("Confirm Password:", ConfirmPass);
+    } else {
+      console.log("Form contains errors");
+    }
+  };
 
   return (
     <div
@@ -78,7 +89,7 @@ function Email() {
     >
       <h1>Email</h1>
       <div>
-        <form>
+        <form onSubmit={onSubmitHandler}>
           <h3>Email</h3>
           <input
             type="text"
@@ -107,13 +118,16 @@ function Email() {
             style={{ width: "400px", height: "60px", fontSize: "30px" }}
             onChange={onConfirmPass}
           />
-          {CPError && <div>Both Passwords should match.</div>}
+          {!CPError && <div>Both Passwords should match.</div>}
           <h3>Submit</h3>
-          <input
+          <button
             type="submit"
-            disabled={!EError || !PassE || CPError}
+            disabled={!EError || !PassE || !CPError}
             style={{ width: "200px", height: "40px", fontSize: "10px" }}
-          />
+            //   onClick={onSubmitHandler}
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>

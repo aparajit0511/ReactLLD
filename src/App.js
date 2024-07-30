@@ -9,11 +9,11 @@ import StarRating from "./LLD/StarRating";
 function App() {
   return (
     <div className="App">
-      {/* <StarRating />
+      <StarRating />
       <Popup />
       <PopOver />
       <Counter />
-      <Accordian /> */}
+      <Accordian />
       <Email />
     </div>
   );
