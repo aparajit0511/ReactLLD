@@ -1,4 +1,5 @@
 import "./App.css";
+import Accordian from "./LLD/Accordian";
 import Counter from "./LLD/Counter";
 import PopOver from "./LLD/PopOver";
 import Popup from "./LLD/Popup";
@@ -11,6 +12,7 @@ function App() {
       <Popup />
       <PopOver />
       <Counter />
+      <Accordian />
     </div>
   );
 }
