@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordian from "./LLD/Accordian";
+import Carousel from "./LLD/Carousel";
 import Counter from "./LLD/Counter";
 import Email from "./LLD/Email";
 import PopOver from "./LLD/PopOver";
@@ -15,6 +16,7 @@ function App() {
       <Counter />
       <Accordian />
       <Email />
+      <Carousel />
     </div>
   );
 }
