@@ -9,6 +9,7 @@ import PopOver from "./LLD/PopOver";
 import Popup from "./LLD/Popup";
 import StarRating from "./LLD/StarRating";
 import DatePicker from "./LLD/DatePicker";
+import Table2 from "./LLD/Table/Table2";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <button style={{ width: "100px", height: "60px" }}>Navbar</button>
       </Link>
       <DatePicker />
+
+      <Table2 />
     </div>
   );
 }
