@@ -12,6 +12,7 @@ import DatePicker from "./LLD/DatePicker";
 import Table2 from "./LLD/Table/Table2";
 import List from "./LLD/List";
 import AutocompleteSearch from "./LLD/AutocompleteSearch";
+import FileUpload from "./LLD/FileUpload";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Table2 />
       <List />
       <AutocompleteSearch />
+      <FileUpload />
     </div>
   );
 }
