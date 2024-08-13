@@ -13,6 +13,7 @@ import Table2 from "./LLD/Table/Table2";
 import List from "./LLD/List";
 import AutocompleteSearch from "./LLD/AutocompleteSearch";
 import FileUpload from "./LLD/FileUpload";
+import LazyLoading from "./LLD/LazyLoading";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <List />
       <AutocompleteSearch />
       <FileUpload />
+      <LazyLoading />
     </div>
   );
 }

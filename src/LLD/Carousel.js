@@ -32,7 +32,7 @@ function Carousel() {
         }}
       >
         <button
-          style={{ width: "100px", height: "140px" }}
+          style={{ width: "100%", height: "auto" }}
           onClick={onPrevHandler}
         >
           Prev
