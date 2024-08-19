@@ -15,6 +15,7 @@ function Todo() {
 
   const [Title, setTitle] = useState("");
   const [Description, setDesc] = useState("");
+  const [editIndex, setEditIndex] = useState(null);
 
   //   const Todos = [
   //     {
@@ -41,9 +42,26 @@ function Todo() {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    setTodos([...Todos, { Title, Description }]);
+    // setTodos([...Todos, { Title, Description }]);
+    if (editIndex !== null) {
+      const updatedTodos = Todos.map((todo, index) =>
+        index === editIndex ? { Title, Description } : todo
+      );
+      setTodos(updatedTodos);
+      setEditIndex(null);
+    } else {
+      setTodos([...Todos, { Title, Description }]);
+    }
     setTitle("");
     setDesc("");
+  };
+
+  // update post
+
+  const onUpdateHandler = (indexToUpdate) => {
+    setTitle(Todos[indexToUpdate].Title);
+    setDesc(Todos[indexToUpdate].Description);
+    setEditIndex(indexToUpdate);
   };
 
   // delete post
@@ -55,16 +73,17 @@ function Todo() {
   return (
     <div>
       <h1>Todo</h1>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div>
         <h3>Create A Post</h3>
-        <form onSubmit={onSubmitHandler}>
+        <form
+          onSubmit={onSubmitHandler}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <input
             type="text"
             placeholder="Type a title"
@@ -109,7 +128,7 @@ function Todo() {
                 }}
               >
                 <button onClick={() => onDeleteHandler(index)}>Delete</button>
-                <button>Update</button>
+                <button onClick={() => onUpdateHandler(index)}>Update</button>
               </div>
             </div>
           );

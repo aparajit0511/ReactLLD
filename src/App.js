@@ -19,15 +19,15 @@ import Todo from "./LLD/Todo";
 function App() {
   return (
     <div className="App">
-      {/* <StarRating />
+      <StarRating />
       <Popup />
       <PopOver />
       <Counter />
       <Accordian />
       <Email />
-      <Carousel /> */}
+      <Carousel />
       {/* <InfiniteScroll /> */}
-      {/* <Link to="/navbar">
+      <Link to="/navbar">
         <button style={{ width: "100px", height: "60px" }}>Navbar</button>
       </Link>
       <DatePicker />
@@ -35,7 +35,7 @@ function App() {
       <List />
       <AutocompleteSearch />
       <FileUpload />
-      <LazyLoading /> */}
+      <LazyLoading />
       <Todo />
     </div>
   );
