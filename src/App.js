@@ -15,6 +15,7 @@ import AutocompleteSearch from "./LLD/AutocompleteSearch";
 import FileUpload from "./LLD/FileUpload";
 import LazyLoading from "./LLD/LazyLoading";
 import Todo from "./LLD/Todo";
+import TabComponent from "./LLD/TabComponent";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <FileUpload />
       <LazyLoading />
       <Todo />
+      <TabComponent />
     </div>
   );
 }
